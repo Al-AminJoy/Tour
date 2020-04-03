@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="3dp"
+        app:cardBackgroundColor="@color/basicColor"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"
+                android:layout_gravity="end"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="3dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/basicLightColor"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize"
+                            android:backgroundTint="@color/basicLightColor"
+                            android:drawableLeft="@drawable/ic_search"
+                            android:hint="Enter Location"
+                            android:textColor="@color/textColor"
+                            android:textCursorDrawable="@color/blackColor"
+                            />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Filters"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold"
+                android:textColor="@color/whiteColor"
+                android:layout_marginBottom="16dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteColor"
+                    android:text="Minimum Budget : "
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp"
+
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize"
+                        android:textColor="@color/textColor"
+                        android:backgroundTint="@color/whiteColor"
+                        android:textCursorDrawable="@color/textColor"
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteColor"
+                    android:text="Maximum Budget : "
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp"
+
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize"
+                        android:textColor="@color/textColor"
+                        android:backgroundTint="@color/whiteColor"
+                        android:textCursorDrawable="@color/textColor"
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.4"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteColor"
+                    android:text="Date : "
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.6"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp"
+
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize"
+                        android:textColor="@color/textColor"
+                        android:backgroundTint="@color/whiteColor"
+                        android:textCursorDrawable="@color/textColor"
+                        android:id="@+id/etFilterDialogDateId"
+                        android:focusable="false"
+                        android:clickable="true"
+                        />
+                </androidx.cardview.widget.CardView>
+                <ImageView
+                    android:id="@+id/ivDatePickerId"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date"
+                    android:layout_gravity="center"
+
+                    />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Search"
+                android:textColor="@color/whiteColor"
+                android:clickable="true"
+
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/tbHome"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/tbHome"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Search For Your Destination."
+            android:textColor="@color/blackColor"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="3dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/basicLightColor"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                      android:layout_toLeftOf="@id/ivHomeFilterId"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/etHomeSearchId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize"
+                        android:backgroundTint="@color/basicLightColor"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:hint="Search"
+                        android:textColor="@color/textColor"
+                        android:textCursorDrawable="@color/blackColor"
+                        />
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/ivHomeFilterId"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_filter"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/post_layout"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

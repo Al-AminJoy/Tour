@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Events"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="@dimen/textSize"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="3dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/linLayCurrentPostViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:background="@drawable/sea"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="bottom"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize"
+                            android:textStyle="bold"
+                            android:layout_gravity="end"
+                            android:text="Starts On : 23 Jan 2020"
+                            android:background="#995BC0D8"
+                            android:textColor="@color/whiteColor"
+                            android:gravity="end"
+                            android:layout_marginBottom="5dp"
+                            android:padding="16dp"/>
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize"
+                            android:textStyle="bold"
+                            android:text="Sajek Valley,Bangladesh"
+                            android:background="#995BC0D8"
+                            android:textColor="@color/whiteColor"
+                            android:gravity="end"
+                            android:padding="16dp"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="5dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvPostLayHostId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize"
+                            android:textStyle="bold"
+                            android:text="hosted by : Travel Air Bangladesh"
+                            android:background="#99141414"
+                            android:textColor="@color/whiteColor"
+                            android:padding="16dp"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/linLayCurrentPostViewId"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold"
+                        android:text="Bangladesh Travel Itenary : Rocket Streamer With 2 Heritage"
+                        android:background="@color/basicLightColor"
+                        android:textColor="@color/textColor"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agency Details"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="@dimen/textSize"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="3dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/basicLightColor"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sk Travel Group"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/blackColor"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:orientation="horizontal"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Office Address : "
+                       android:textColor="@color/textColor"
+                       android:textStyle="bold"
+                       android:textSize="@dimen/textSize"
+                       />
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Nikunja-2,Khilkhet,Dhaka-1229"
+                       android:textColor="@color/textColor"
+                       android:textSize="@dimen/textSize"
+                       />
+               </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/basicColor"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Call Your Agency"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/whiteColor"
+                    />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>
